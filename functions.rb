@@ -16,7 +16,13 @@ end
 # (Hint: the is_a? method might be useful here)
 # 
 def sum_only_numbers(an_array)
-
+	o = 0
+	an_array.each do |i|
+	  if i.is_a?(Numeric)
+		o = o+i
+	  end
+	end
+	return o
 end
 
 # For i from 1 to 100, return an array.
