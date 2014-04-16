@@ -7,7 +7,7 @@ end
 # Letters should be lowercase before counting
 # For example, histogram('Hello') returns {'h'=>1,'e'=>1,'l'=>2,'o'=>1}
 def histogram(a_string)
-	 
+	
 end
 
 # Sum all the numbers in the array
@@ -16,6 +16,7 @@ end
 # (Hint: the is_a? method might be useful here)
 # 
 def sum_only_numbers(an_array)
+
 end
 
 # For i from 1 to 100, return an array.
@@ -26,6 +27,18 @@ end
 # Otherwise, the element is simply the value of i
 # For example [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', ..., 14, 'FizzBuzz', ...]
 def fizzbuzz
+	(1..100).each do |i|
+		if i%3 == 0 && i%5 == 0
+			puts "FizzBuzz"
+		elsif i % 3 == 0
+			puts "Fizz"
+		elsif i % 5 == 0
+			puts "Buzz"
+		else
+			puts i
+		end
+	end
+	return
 end
 
 # Uncomment each of these to test your functions
