@@ -36,22 +36,23 @@ end
 # Otherwise, the element is simply the value of i
 # For example [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', ..., 14, 'FizzBuzz', ...]
 def fizzbuzz
+	array = []
 	(1..100).each do |i|
 		if i%3 == 0 && i%5 == 0
-			puts "FizzBuzz"
+			array << "FizzBuzz"
 		elsif i % 3 == 0
-			puts "Fizz"
+			array << "Fizz"
 		elsif i % 5 == 0
-			puts "Buzz"
+			array << "Buzz"
 		else
-			puts i
+			array << i
 		end
 	end
-	return
+	return array
 end
 
 # Uncomment each of these to test your functions
 # puts reverse([3,6,'dog']).inspect
-puts histogram('The Quick brown fox').inspect
+# puts histogram('The Quick brown fox').inspect
 # puts sum_only_numbers [4, 'foo', [ ], 27, :rain, 3.14]
 # puts fizzbuzz.join("\n")
